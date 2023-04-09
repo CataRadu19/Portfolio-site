@@ -1,0 +1,15 @@
+.hero {
+  height: 100vh;
+  .hero-main-container {
+    .hero-text-container {
+      .hero-title-text {
+        display: flex;
+        flex-direction: row;
+        img {
+          height: 4rem;
+          width: 4rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.navbar {
+  padding: 0;
+}
+.navbar .container {
+  max-width: none;
+  padding: 1.2rem 3rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+.navbar .container .navbar-brand {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2d2e32;
+  cursor: pointer;
+}
+.navbar .container .navbar-nav .nav-link {
+  color: #2d2e32;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 0.6rem;
+  transition: all 0.23s;
+}
+.navbar .container .navbar-nav .nav-link:hover {
+  color: #147efb;
+}/*# sourceMappingURL=Header.css.map */

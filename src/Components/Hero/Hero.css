@@ -1,0 +1,11 @@
+.hero {
+  height: 100vh;
+}
+.hero .hero-main-container .hero-text-container .hero-title-text {
+  display: flex;
+  flex-direction: row;
+}
+.hero .hero-main-container .hero-text-container .hero-title-text img {
+  height: 4rem;
+  width: 4rem;
+}/*# sourceMappingURL=Hero.css.map */
