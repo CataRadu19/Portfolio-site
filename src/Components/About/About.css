@@ -1,0 +1,96 @@
+.about {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.about .container-width .about-container {
+  display: flex;
+  justify-content: space-between;
+}
+.about .container-width .about-container .text-side {
+  flex-basis: 50%;
+}
+.about .container-width .about-container .text-side h4 {
+  color: #147efb;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.about .container-width .about-container .text-side h3 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding-bottom: 0.7rem;
+  color: #2d2e32;
+}
+.about .container-width .about-container .text-side p {
+  color: #767676;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.about .container-width .about-container .image-side {
+  flex-basis: 50%;
+  position: relative;
+}
+.about .container-width .about-container .image-side .about-img {
+  border-radius: 1.7rem;
+  height: 22rem;
+  width: 26rem;
+}
+.about .container-width .about-container .image-side span {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  right: 1rem;
+  bottom: -1rem;
+}
+.about .container-width .about-container .image-side span .rotating-text {
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  animation: rotate 9s linear infinite;
+}
+.about .container-width .about-container .image-side .human-emoji {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  right: 5rem;
+  bottom: 3.5rem;
+  z-index: 10;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .human-emoji,
+  .rotating-text,
+  .image-side span {
+    display: none;
+  }
+  .about .container-width .about-container {
+    flex-direction: column;
+  }
+  .about .container-width .about-container .text-side {
+    text-align: center;
+  }
+  .about .container-width .about-container .image-side {
+    display: flex;
+    margin-bottom: 5rem;
+  }
+  .about .container-width .about-container .image-side .about-img {
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .about .container-width {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}/*# sourceMappingURL=About.css.map */

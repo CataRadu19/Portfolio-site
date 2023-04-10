@@ -1,13 +1,177 @@
 .hero {
   height: 100vh;
-  .hero-main-container {
-    .hero-text-container {
-      .hero-title-text {
-        display: flex;
-        flex-direction: row;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
+  .container-width {
+    .hero-main-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .hero-text-container {
+        flex-basis: 50%;
+        .hero-title-text {
+          display: flex;
+          flex-direction: row;
+          h1 {
+            font-size: 3.4rem;
+            font-weight: bold;
+            color: #2d2e32;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+          }
+
+          img {
+            height: 4rem;
+            width: 4rem;
+          }
+        }
+        p {
+          color: #767676;
+          font-size: 1.1rem;
+          font-weight: 500;
+          line-height: 1.6;
+          margin-bottom: 2rem;
+        }
+        .hero-socials {
+          a {
+            &:nth-child(2) {
+              margin-left: 0.6rem;
+            }
+            &:hover {
+              color: #147efb;
+            }
+            transition: all 0.23s;
+            color: #2d2e32;
+            .hero-icon {
+              width: 2rem;
+              height: 2rem;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .hero-image-container {
+      flex-basis: 40%;
+      -webkit-animation: morph 8s ease-in-out infinite;
+      animation: morph 8s ease-in-out infinite;
+      background-image: url("../../Assets/Images/headshot.png");
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 3px solid #2d2e32;
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+      height: 25rem;
+      position: relative;
+      transition: all 1s ease-in-out;
+      width: 25rem;
+    }
+    .tech-stack-container {
+      display: flex;
+      align-items: center;
+      margin-top: 4rem;
+      p {
+        border-right: 2px solid rgba(45, 46, 50, 0.5);
+        color: #2d2e32;
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin-right: 3rem;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+      }
+      .stack-images {
         img {
-          height: 4rem;
-          width: 4rem;
+          height: 2.5rem;
+          width: 2.5rem;
+          margin-left: 2rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero {
+    height: auto;
+    padding-top: 8rem;
+    .container-width {
+      max-width: 40rem;
+      .hero-main-container {
+        flex-direction: column;
+        align-items: center;
+        flex-flow: column-reverse;
+        .hero-image-container {
+          flex-basis: auto;
+        }
+        .hero-text-container {
+          flex-basis: auto;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+      }
+      .tech-stack-container {
+        flex-direction: column;
+        p {
+          border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+          border-right: none;
+          padding-bottom: 1rem;
+          margin-right: 0;
+          padding-right: 0;
+          margin-bottom: 1rem;
+        }
+        .stack-images {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          img {
+            margin-left: 1rem;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    .container-width {
+      width: 100%;
+      .hero-main-container {
+        .hero-image-container {
+          width: 18rem;
+          height: 18rem;
+        }
+        .hero-text-container {
+          flex-basis: auto;
+          text-align: center;
+          margin-bottom: 2rem;
+          .hero-title-text {
+            h1 {
+              font-size: 2.4rem;
+            }
+          }
         }
       }
     }

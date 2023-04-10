@@ -30,3 +30,15 @@
     }
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    .container {
+      .navbar-nav {
+        .nav-link {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
