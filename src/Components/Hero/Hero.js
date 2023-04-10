@@ -13,7 +13,7 @@ import scss from '../../Assets/Images/scss.svg'
 
 export default function Hero() {
     return (
-        <div className="hero">
+        <div className="hero" id='home'>
             <div className='container-width'>
                 <div className='hero-main-container'>
                     <div className='hero-text-container'>
@@ -22,8 +22,8 @@ export default function Hero() {
                         </div>
                         <p className='mulish'>Hi, I'm Radu Catalin. A passionate Front-end React Developer based in Targu Mures, Romania. 📍</p>
                         <div className='hero-socials'>
-                            <a href='/'><FontAwesomeIcon className='hero-icon' icon={faLinkedin} /></a>
-                            <a href='/'><FontAwesomeIcon className='hero-icon' icon={faGithub} /></a>
+                            <a href='https://www.linkedin.com/in/radu-catalin-andrei/'><FontAwesomeIcon className='hero-icon' icon={faLinkedin} /></a>
+                            <a href='https://github.com/CataRadu19'><FontAwesomeIcon className='hero-icon' icon={faGithub} /></a>
                         </div>
                     </div>
 
@@ -31,7 +31,7 @@ export default function Hero() {
 
                     </div>
                 </div>
-                <div className='tech-stack-container'>
+                <div className='tech-stack-container' id='about'>
                     <p className='mulish'>Tech Stack</p>
                     <div className='stack-images'>
                         <img src={html} alt='HTML' title='HTML5' />

@@ -20,7 +20,7 @@
 .pro {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
   gap: 5rem;
   height: 27rem;
   padding: 1.3rem;
@@ -90,8 +90,10 @@
   }
 }
 
-.pro-reverse {
+.reverse {
   flex-direction: row-reverse;
+  padding-right: 1.5rem;
+  padding-left: 2rem;
 }
 
 @media only screen and (max-width: 1000px) {
