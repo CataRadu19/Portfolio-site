@@ -9,6 +9,10 @@ export default function Projects() {
     return (
         <div className="projects">
             <div className='container-width'>
+                <div className='projects-title'>
+                    <p>PORTFOLIO</p>
+                    <h4>Each project is a unique piece of development 🧩</h4>
+                </div>
                 <Project title="CAR RENTAL" description={descCarRental} img={carRental} techno1="React" techno2="SCSS" code="https://github.com/CataRadu19/Portfolio-page" demo="https://car-rental-radu-catalin.netlify.app/" scrollY="-83%" icon="🚗" />
             </div>
         </div>

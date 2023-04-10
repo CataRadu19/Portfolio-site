@@ -1,5 +1,8 @@
 import { useState } from "react";
 import './Project.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default function Project({
     title,
@@ -37,16 +40,16 @@ export default function Project({
                     </h3>
                     <p>{description}</p>
                     <div className="stack">
-                        <p>{techno1}</p>
-                        <p>{techno2}</p>
+                        <p className="mulish">{techno1}</p>
+                        <p className="mulish">{techno2}</p>
                     </div>
                     <div className="links">
                         <a target="_blank" href={code} rel="noreferrer">
-                            Code <i className="fa-brands fa-github"></i>
+                            Code <FontAwesomeIcon className='hero-icon' icon={faGithub} size="xl" />
                         </a>
                         <a target="_blank" href={demo} rel="noreferrer">
                             Live Demo
-                            <i className="fa-solid fa-arrow-up-right-from-square link-icon"></i>
+                            <FontAwesomeIcon className='hero-icon' icon={faArrowUpRightFromSquare} size="lg" />
                         </a>
                     </div>
                 </div>

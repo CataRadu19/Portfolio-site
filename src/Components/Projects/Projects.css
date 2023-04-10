@@ -1,1 +1,25 @@
-/*# sourceMappingURL=Projects.css.map */
+.projects {
+  background-color: #f9f9f9;
+  padding-top: 8rem;
+}
+.projects .container-width .projects-title p {
+  color: #147efb;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.projects .container-width .projects-title h4 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #2d2e32;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects .container-width {
+    padding: 0 1rem;
+  }
+  .projects .container-width .projects-title {
+    text-align: center;
+  }
+}/*# sourceMappingURL=Projects.css.map */
