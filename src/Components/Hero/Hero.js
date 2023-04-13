@@ -1,4 +1,5 @@
 import './Hero.css'
+import { useState } from 'react';
 import wave from '../../Assets/Images/wave.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -9,26 +10,37 @@ import javascript from '../../Assets/Images/javascript.svg'
 import react from '../../Assets/Images/react.svg'
 import bootstrap from '../../Assets/Images/bootstrap.svg'
 import scss from '../../Assets/Images/scss.svg'
-
+import glasses from '../../Assets/Images/glasses.png'
 
 export default function Hero() {
+
+    const [smart, setSmart] = useState(false);
+
+    const handleSmart = () => {
+        setSmart(!smart);
+    }
     return (
         <div className="hero" id='home'>
             <div className='container-width'>
+
                 <div className='hero-main-container'>
                     <div className='hero-text-container'>
                         <div className='hero-title-text'>
                             <h1>Front-End React Developer <img src={wave} alt='Catalin.dev' /></h1>
                         </div>
-                        <p className='mulish'>Hi, I'm Radu Catalin. A passionate Front-end React Developer based in Targu Mures, Romania. 📍</p>
+
+                        {smart ? <p className='mulish'>I am a solution-oriented Front-End Developer, lifelong learner, and adventurer. I enjoy development because of the satisfaction I get by overcoming challenges. I am motivated by the opportunity that software provides to positively impact the life of an individual, and the world as a whole.
+                            <br></br>
+                            When I'm not coding, you can find me battling mythical monsters in God of War.</p> : <p className='mulish'>I'm a passionate Front-end React Developer based in Targu Mures, Romania. 📍 </p>}
                         <div className='hero-socials'>
                             <a href='https://www.linkedin.com/in/radu-catalin-andrei/'><FontAwesomeIcon className='hero-icon' icon={faLinkedin} /></a>
                             <a href='https://github.com/CataRadu19'><FontAwesomeIcon className='hero-icon' icon={faGithub} /></a>
                         </div>
+                        <button className="smartify" onClick={handleSmart}>Smartify</button>
                     </div>
 
                     <div className='hero-image-container'>
-
+                        <img src={glasses} className={`content ${smart ? '' : 'off'}`} alt="glasses" />
                     </div>
                 </div>
                 <div className='tech-stack-container' id='about'>

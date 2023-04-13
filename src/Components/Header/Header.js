@@ -3,7 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Header.css'
 
-export default function Header() {
+export default function Header({ handleSmart }) {
+
     return (
         <Navbar bg="light" expand="lg">
             <Container>

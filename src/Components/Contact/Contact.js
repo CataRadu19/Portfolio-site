@@ -14,7 +14,7 @@ export default function Contact() {
                             CONTACT
                         </p>
                         <h4>
-                            Don't be shy! Hit me up! 👇
+                            Hit me up! 👇
                         </h4>
                     </div>
                     <div className='contact-icons'>
