@@ -60,7 +60,7 @@
 .hero .container-width .hero-image-container {
   flex-basis: 40%;
   animation: morph 8s ease-in-out infinite;
-  background-image: url("../../Assets/Images/headshot.png");
+  background-image: url("../../Assets/Images/headshot.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,6 +163,9 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .hero {
+    padding-bottom: 3rem;
+  }
   .hero .container-width {
     width: 100%;
   }
