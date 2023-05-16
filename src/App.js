@@ -15,13 +15,13 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   // 1 sec loader
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 1000);
+   useEffect(() => {
+     const timer = setTimeout(() => {
+      setIsLoading(false);
+     }, 1000);
 
-  //   return () => clearTimeout(timer);
-  // }, []);
+     return () => clearTimeout(timer);
+   }, []);
 
   return (
     <>
