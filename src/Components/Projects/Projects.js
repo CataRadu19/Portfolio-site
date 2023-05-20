@@ -1,6 +1,7 @@
 import './Projects.css'
 import Project from '../Project/Project'
 import carRental from '../../Assets/Images/car-rental-whole-page.png'
+import gamehound from '../../Assets/Images/gamehound-main-page.png'
 import eCommerce from '../../Assets/Images/ecom.webp'
 import gymSite from '../../Assets/Images/gymate.webp'
 import coinDom from '../../Assets/Images/coindom.png'
@@ -29,6 +30,19 @@ export default function Projects() {
                 />
 
                 <Project
+                    title="GAMEHOUND"
+                    description="GameHound is your go-to platform for game scores, reviews, and insights. Make informed decisions and find the perfect game for your preferences."
+                    img={gamehound}
+                    techno1="React"
+                    techno2="Styled C."
+                    code="#"
+                    demo="https://gamehound.netlify.app/"
+                    scrollY="-45%"
+                    cName="reverse"
+                    icon="🎮"
+                />
+
+                <Project
                     title="COINDOM"
                     description="Coindom is a crypto app that allows users to search for information about various cryptocurrencies in real-time."
                     img={coinDom}
@@ -37,7 +51,7 @@ export default function Projects() {
                     code="https://github.com/CataRadu19/Crypto-site"
                     demo="https://crypto-site-radu-catalin.netlify.app/"
                     scrollY="-70%"
-                    cName="reverse"
+                    cName=""
                     icon="🪙"
                 />
 
@@ -50,7 +64,7 @@ export default function Projects() {
                     code="https://github.com/CataRadu19/Gym-site"
                     demo="https://gym-site-radu-catalin.netlify.app/"
                     scrollY="-85%"
-                    cName=""
+                    cName="reverse"
                     icon="🏋️"
                 />
 
@@ -63,7 +77,7 @@ export default function Projects() {
                     code="https://github.com/CataRadu19/Shop-site"
                     demo="https://shop-site-radu-catalin.netlify.app/"
                     scrollY="-67%"
-                    cName="reverse"
+                    cName=""
                     icon="🛒"
                 />
             </div>
